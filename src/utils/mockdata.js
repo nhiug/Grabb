@@ -1,30 +1,3 @@
-import React from "react";
-import ReactDOM  from "react-dom/client";
-
-const RestaurantCard = (props) => {
-  const { resData } = props;
-
-  const {
-
-    name,
-    avgRating,
-    cuisines,
-    costForTwo,
-    deliveryTime,
-  } = resData?.data;
-
-  return (
-    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
- 
-      <h3>{name}</h3>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>{avgRating} stars</h4>
-      <h4>₹{costForTwo / 100} FOR TWO</h4>
-      <h4>{deliveryTime} minutes</h4>
-    </div>
-  );
-};
-
 const resList = [
     {
         type: "restaurant",
@@ -1909,44 +1882,4 @@ const resList = [
         subtype: "basic",
     },
 ];
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {resList.map((restaurant) => (
-          <RestaurantCard key={restaurant.data.id} resData={restaurant} />
-        ))}
-      </div>
-    </div>
-)}
-
-
-const Header = () => {
-    return(
-        <div className="header">
-        <div className="logo-container">
-            <img className="logo" src="https://th.bing.com/th/id/OIP.11pRDiey3AnLbcNePxaWEgHaCA?rs=1&pid=ImgDetMain"></img>
-        </div>
-        <div className="nav-items">
-            <ul>
-                <li> Home </li>
-                <li> About</li>
-                <li> Contact us</li>
-            </ul>
-        </div>
-    </div>
-    )
-
-}
-const AppLayout = () => {
-    return(
-        <div className="app">
-            <Header />
-            <Body />
-        </div>
-    )
-}
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default resList;
