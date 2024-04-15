@@ -1,0 +1,22 @@
+{
+  "name": "grabb",
+  "version": "1.0.0",
+  "description": "Grab- App",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhiug/Grabb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhiug/Grabb/issues"
+  },
+  "homepage": "https://github.com/nhiug/Grabb#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

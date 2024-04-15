@@ -1,0 +1,7 @@
+/node_modules
+/data.mdb
+.parcel-cache/data.mdb
+.parcel-cache/lock.mdb
+/dist
+/.parcel-cache
+
